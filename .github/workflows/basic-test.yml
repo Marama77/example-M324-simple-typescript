@@ -1,0 +1,12 @@
+name: Basic Self-Hosted Test
+
+on:
+  push:
+    branches: [ "main", "master" ]
+
+jobs:
+  test-job:
+    runs-on: self-hosted
+    steps:
+      - name: Text ausgeben
+        run: echo "Der einfache Workflow läuft direkt über GitHub initiiert auf meinem eigenen Runner!"
